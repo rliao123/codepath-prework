@@ -14,11 +14,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBOutlet var Background: UIView!
     @IBOutlet weak var TextLabel: UILabel!
     @IBAction func ButtonClicked(_ sender: Any) {
         print("hello")
         TextLabel.textColor = UIColor.orange
     }
     
+    @IBAction func BButtonClicked(_ sender: Any) {
+        Background.backgroundColor = UIColor.gray
+    }
 }
 
